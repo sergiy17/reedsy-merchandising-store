@@ -63,4 +63,17 @@ RSpec.describe ProductsController, type: :controller do
       end
     end
   end
+
+  describe "GET 'total_price'" do
+    let(:request) { post :total_price, params: }
+    let(:params) { { mug: 2, t_shirt: 4, hoodie: 1 } }
+
+    before { perform_request }
+
+    context 'when 9 MUG, 1 TSHIRT' do
+      let(:params) { { mug: 9, t_shirt: 1 } }
+
+      it { expect(parsed_body['total']).to eq(69) }
+    end
+  end
 end

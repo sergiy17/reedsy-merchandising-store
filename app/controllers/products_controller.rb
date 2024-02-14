@@ -18,10 +18,18 @@ class ProductsController < ApplicationController
     end
   end
 
+  def total_price
+    render json: { total: Product::TotalPrice.new(total_price_params.to_h).call }
+  end
+
   private
 
   def update_params
     params.permit(:price_cents, :price_currency)
+  end
+
+  def total_price_params
+    params.permit(:mug, :t_shirt, :hoodie)
   end
 
   def load_product
