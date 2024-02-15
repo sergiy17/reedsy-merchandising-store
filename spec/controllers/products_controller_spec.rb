@@ -22,7 +22,7 @@ RSpec.describe ProductsController, type: :controller do
     end
   end
 
-  describe "POST 'update'" do
+  describe "PUT 'update'" do
     let(:target_product) { create(:product, :mug) }
     let(:request) { post :update,  params: }
 
