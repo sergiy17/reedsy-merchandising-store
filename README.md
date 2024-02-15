@@ -16,12 +16,16 @@ During my career I was working in different domains:
 <details>
   <summary>Project setup</summary>
 
+1. Clone the repo with `git clone https://github.com/sergiy17/reedsy-merchandising-store.git`
+
+2. Check `database.yml`, make sure that you have the needed postgresql user or substituite with your personal one
+3. `bundle && rails db:setup && rails s`
 </details>
 
 
 
 <details>
-    <summary>Requests examples and screenshots:</summary>
+    <summary>Requests examples and screenshots</summary>
 
 ```
 GET to http://localhost:3000/products
@@ -33,11 +37,13 @@ GET to http://localhost:3000/products
 ```
 PUT to http://localhost:3000/products/1?price_cents=1000
 ```
-![alt text](https://raw.githubusercontent.com/sergiy17/reedsy-merchandising-store/master/public/Screenshot%202024-02-15%20at%2008.44.57.png?token=GHSAT0AAAAAACOHPF6V7HEAKPC4RGIYKEHYZONYPEQ)
+<img width="999" alt="Screenshot 2024-02-15 at 08 44 57" src="https://github.com/sergiy17/reedsy-merchandising-store/assets/12006123/4159a1f3-06cd-4ad2-acf3-1d30b68c4cbe">
+
 
 
 ```
 GET to http://localhost:3000/products/total_price?mug=200&t_shirt=4&hoodie=1
 ```  
-![alt text](https://raw.githubusercontent.com/sergiy17/reedsy-merchandising-store/master/public/Screenshot%202024-02-15%20at%2008.49.59.png?token=GHSAT0AAAAAACOHPF6VNJEIOFDN4KPXEREIZONYPSA)
+<img width="998" alt="Screenshot 2024-02-15 at 08 49 59" src="https://github.com/sergiy17/reedsy-merchandising-store/assets/12006123/4c6301d0-9049-40a3-aee3-41ee41274bfe">
+
 </details>
